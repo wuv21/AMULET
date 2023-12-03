@@ -228,7 +228,7 @@ def findOverlaps(fragmentfile, singlecellfile, expectedoverlap, chrlist, path, m
     
     #Set up barcode maps
     sc_data = pd.read_csv(singlecellfile)
-    sc_data = sc_data[sc_data['is__cell_barcode'] == 1]
+    sc_data = sc_data[sc_data['is_cell'] == 1]
     bc_map = dict()
     previous_reads = dict()
     previous_ends = dict()
@@ -236,7 +236,7 @@ def findOverlaps(fragmentfile, singlecellfile, expectedoverlap, chrlist, path, m
     vreadspercell = dict()
     readspercell = dict()
 
-    for curbarcode in sc_data['barcode']:
+    for curbarcode in sc_data['atac_barcode']:
         bc_map[curbarcode] = []
         previous_reads[curbarcode] = []
         previous_ends[curbarcode] = -1

@@ -236,7 +236,7 @@ def findOverlaps(fragmentfile, singlecellfile, expectedoverlap, chrlist, path, m
     vreadspercell = dict()
     readspercell = dict()
 
-    for curbarcode in sc_data['atac_barcode']:
+    for curbarcode in sc_data['barcode']:
         bc_map[curbarcode] = []
         previous_reads[curbarcode] = []
         previous_ends[curbarcode] = -1

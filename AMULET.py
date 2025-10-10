@@ -99,7 +99,7 @@ def getDoublets(matrix, unionoverlaps, rcelliddict):
         doublets_probas.append([rcelliddict[index], doublet_probabilities[index], cur])
         index += 1
 
-    return np.array(doublets_probas, dtype=np.object)
+    return np.array(doublets_probas, dtype=object)
 
 
 
@@ -130,12 +130,12 @@ def getFilteredOverlaps(data, simplerepeats, expectedoverlap):
                 #Recalculate overlaps
 
                 #starts increment by 1
-                counts = np.ones((len(starts), 2), dtype=np.object)
+                counts = np.ones((len(starts), 2), dtype=object)
                 counts[:,0] = starts
                 counts
 
                 #ends decrement by 1
-                counts2 = -1*np.ones((len(starts), 2), dtype=np.object)
+                counts2 = -1*np.ones((len(starts), 2), dtype=object)
                 counts2[:,0] = ends
                 counts2
 

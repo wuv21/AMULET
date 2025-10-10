@@ -355,6 +355,6 @@ def getUnionPeaks(datasets, chridx=0, startidx=1, endidx=2):
                 curloci[2] = max(curloci[2], nextloci[2])
 
         rv.append([curchr, curloci[1], curloci[2]])
-    return np.array(rv, dtype=np.object)
+    return np.array(rv, dtype=object)
 
 

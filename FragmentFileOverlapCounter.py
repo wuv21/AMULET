@@ -190,7 +190,7 @@ def writeOverlapSummary(filepath, overlapcounts, vreadspercell, readspercell):
                "Total Number of Reads"]
     
     
-    table = np.empty(shape=(len(overlapcounts),len(colnames)), dtype=np.object)
+    table = np.empty(shape=(len(overlapcounts),len(colnames)), dtype=object)
 
     rowindex = 0
     for curbarcode in overlapcounts.keys():

@@ -248,7 +248,7 @@ def findOverlaps(fragmentfile, singlecellfile, expectedoverlap, chrlist, path, m
     readspercell = dict()
 
     if multiomeMode:
-      barcode_colname = "atac_barcode"
+      barcode_colname = "barcode"
     else:
       barcode_colname = "barcode"
 
